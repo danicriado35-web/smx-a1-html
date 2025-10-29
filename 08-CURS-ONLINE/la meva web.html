@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ca" suppresshydrationwarning="true" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la meva web </title>
+    <meta name="description" content="botiga online de videojocs">
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/00_exercicis_html/08-curs-online/baixa.png" type="image/x-icon">
+</head>
+<body>
+    <header>    
+            <h1>Inscripció Curs Online</h1>
+    </header>
+    <main>
+        <form action="resultats.html" method="get"></form>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for="Nom complet">Nom complet:</label>
+            <input type="text" name="Nom" id="Nom"><br>
+            <label for="">Correu electronic</label>
+            <input type="email" name="email" id=""><br>
+            <label for="">Tèlefon</label>
+            <input type="tel" name="telefon" id=""><br>
+            <label for="">Data de naixament</label>
+            <input type="date" name="Data" id=""><br>
+        </fieldset>
+        <fieldset>
+            <legend>Tipus de Curs i Experiència prèvia</legend>
+            <label for="">Quins cursos hi ha?</label>
+            <select name="cursos" id="cursos">
+            <optgroup label="Disponibles">
+                <option value="Programació bàsica" selected="selected">Programació bàsica</option>
+                <option value="Administració de Sistemes">Administració de Sistemes</option>
+                <option value="Desenvolupament web">Desenvolupament Web</option>
+                <option value="Desenvolupament de Videojocs">Desenvolupament de Videojocs</option>
+            </optgroup>
+            </select><br>
+            <label for="">Experiència previa</label><br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">Avançat</label>
+            <br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">Intermedi</label>
+            <br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">Novat</label>
+        </fieldset>
+        <fieldset>
+            <legend>Intressos i motivació</legend>
+            <input type="checkbox" name="" id="Interessos:">
+            <label for="">Projectes pràctics</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Tutories online</label><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Certificats</label><br>
+            <label for="">Explica aquí els motius per els quals has escolllit el curs:</label><br>
+            <textarea name="" id=""></textarea><br>
+            <label for="">Lloc de treball que voldires treballar:</label>
+            <datalist>Opcions:</datalist><br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">Backend</label>
+            <br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">DevOps</label>
+            <br>
+            <input type="radio" name="nivell" id="radio">
+            <label for="">Ciberseguretat</label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Fitxer i acceptació de condicions</legend>
+            <input type="file" name="" id=""><br>
+            <input type="checkbox" name="" id="">
+            <label for="">Accepto les condicions al realitxar el curs</label>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="">
+            <label for="">Desa les respostes</label>
+        </fieldset>
+    </main>
+    <footer>
+        ©DaniCriado - iesICV - 676574675
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
