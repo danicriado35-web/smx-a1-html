@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca" suppresshydrationwarning="true" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Superheroes</title>
+</head>
+        <body><h1>Formulario Superheroes</h1>
+
+    <form method="post" action="resultats.html">
+        <fieldset>
+            <label for="Nombre">Nombre del Superheroe:</label>
+            <input type="text" id="Nombre" name="Nombre"><br><br>
+            <label for="email">Correro del representante:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" name="clau" id="clau"><br><br>
+            <label for="batalles">Nombre de batalles lluitades aquest any:</label>
+            <input type="number" id="batalles" name="batalles" min="0" max="999" required=""><br><br>
+            <label for="poder">Nivel de poder actual:</label>
+            <input type="range" id="poder" name="poder" min="1" max="100" value="1"><br><br>
+            <label for="data">Primera aparición como Superheroe:</label>
+            <input type="date" id="data" name="data"><br><br>
+            <label for="hora">Hora disponible para las reuniones:</label>
+            <input type="time" id="hora" name="hora" required=""><br><br>
+            <label for="color">Color principal del traje:</label>
+            <input type="color" id="color" name="color" value="#000000"><br><br>
+            <label for="url">Pàgina web oficial:</label>
+            <input type="url" id="url" name="url" required=""><br><br>
+            <label for="tel">Telefono de seguridad:</label>
+            <input type="tel" id="tel" name="tel" required="" pattern="[0-9]{9}" placeholder="123456789"><br><br>
+            <label for="Tipus">Tipos de Personaje:</label><br><br>
+            <input type="radio" name="tipus" id="Heroi">Heroe
+            <input type="radio" name="tipus" id="Heroi">Malvado
+            <input type="radio" name="tipus" id="Heroi">Ayudante
+            <p>Tips de personaje:</p>
+            <input type="radio" id="heroi" name="tipus" value="Heroi" required="">
+            <label for="heroi">Heroe</label><br>
+            <input type="radio" id="ajudant" name="tipus" value="Ajudant">
+            <label for="ajudant">Malvado</label><br>
+            <input type="radio" id="malvat" name="tipus" value="Malvat">
+            <label for="malvat">Ajudante</label><br>
+            <p>Superpoderes:</p>
+            <input type="checkbox" id="invisibilidad" name="poderes" value="Invisibilidad">
+            <label for="invisibilitat">Invisibilidad</label><br>
+            <input type="checkbox" id="Superfuerza" name="poderes" value="Superfuerza">
+            <label for="superforca">Superfuerza</label><br>
+            <input type="checkbox" id="volar" name="poderes" value="Volar">
+            <label for="volar">Volar</label><br>
+            <label for="univers">Universo:</label>
+            <select id="univers" name="univers" required="">
+                <option value="" selected="selected">-- Elige un unico Universo --</option>
+                <option value="Marvel">Marvel</option>
+                <option value="DC">DC</option>
+                <option value="Altres"></option>
+            </select>
+        </fieldset>
+        <fieldset>
+        <legend>Enquesta — Temàtica 1</legend>
+        <p>1. ¿Quién es tu villano favorito??</p>
+        <input type="radio" name="enemics" value="Joker" required=""> Joker
+        <input type="radio" name="enemics" value="Thanos"> Thanos
+        <input type="radio" name="enemics" value="Magnertor"> Magnetor<br>
+        <p>2. ¿Cuál sería tu gadget ideal?</p>
+        <input type="radio" name="gadget" value="Batmobile" required=""> Un cinturón lleno de artilugios como el de Batman
+        <input type="radio" name="gadget" value="Un martillo como el de Thor"> Un martillo como el de Thor
+        <input type="radio" name="gadget" value="Escudo de capitan america"> Escudo de capitan america<br>
+        <p>3. ¿Dónde estaría tu base secreta?</p>
+        <input type="radio" name="noequip" value="cueva" required=""> Cueva
+        <input type="radio" name="noequip" value="nave espacial"> nave espacial
+        <input type="radio" name="noequip" value="isla misteriosa"> isla misteriosa<br>
+            <p>4. Que poder te gustaria tener?</p>
+            <input type="radio" name="millora" value="Velocitat" required=""> velocidad
+            <input type="radio" name="millora" value="Intel·ligència"> Telequinesis
+            <input type="radio" name="millora" value="Força"> Superfuerza<br>
+            <p>5. Quin és el teu objectiu principal com a superheroi?</p>
+            <input type="radio" name="objectiu" value="Protegir innocents" required=""> Proteger inocentes
+            <input type="radio" name="objectiu" value="Venjar injustícies"> Injusticias
+            <input type="radio" name="objectiu" value="Dominar el món"> Dominar el mundo<br>
+            <p>¿Cuál es tu mayor debilidad?</p>
+            <input type="radio" name="enemic_temut" value="amor" required=""> amor
+            <input type="radio" name="enemic_temut" value="orgullo"> orgullo
+            <input type="radio" name="enemic_temut" value="curiosidad"> curiosidad<br>
+            <p>7. ¿Cómo terminaría tu historia?</p>
+            <input type="radio" name="amic" value="Robin" required=""> Con una nueva generación de héroes siguiendo tus pasos
+            <input type="radio" name="amic" value="Iron Man"> Con un gran sacrificio heroico
+            <input type="radio" name="amic" value="Black Widow"> Con un giro inesperado y misterioso
+            <p>8. Que color te identifica mas?</p>
+            <input type="radio" name="colorpref" value="Verde" required=""> Verde
+            <input type="radio" name="colorpref" value="negro"> negro
+            <input type="radio" name="colorpref" value="rojo"> rojo<br>
+            <p>9. Con que superheroe harias equipo?</p>
+            <input type="radio" name="equip" value="Superman" required=""> Superman
+            <input type="radio" name="equip" value="Spiderman"> Spiderman
+            <input type="radio" name="equip" value="Wonder Woman"> Wonder Woman<br>
+            <p>10. Cual es tu lema</p>
+            <input type="text" name="lema" required="" minlength="3" maxlength="100">
+                    </fieldset>
+            <br>
+    <input type="submit" value="Enviar Formulario">
+        
+    </form>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
